@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+</head>
+
+<body onload="showFirst()">
+
+    <h1>Use Your Brain!</h1>
+
+    <div id="quiz">
+
+        <div id="que-part-1">
+            <p>Q1: Some months have 31 days,others have 30 days,but how many have 28 days?</p>
+            <div class="que1">
+                <label><input type="radio" id="myques1" name="question1" value="All months have 28 days">All months have
+                    28
+                    days</label>
+                <label><input type="radio" name="question1" value="February">February</label>
+                <button onclick="showNext2()" class="next">Next</button>
+            </div>
+        </div>
+
+        <div id="que-part-2">
+            <p>Q2: What has a head,a tail,but does not have a body? </p>
+            <div class="que2">
+                <label><input type="radio" id="myques2" name="question2" value="A coin">A coin</label>
+                <label><input type="radio" name="question2" value="insects">insects</label>
+                <button onclick="showNext3()" class="next">Next</button>
+            </div>
+        </div>
+
+        <div id="que-part-3">
+            <p>Q3: What is maximum number of times a single page of a newspaper can be folded in half by hand? </p>
+            <div class="que3">
+
+                <label><input type="radio" id="myques3" name="question3" value="Only once">Only once</label>
+                <label><input type="radio" name="question3" value="Many times">Many times</label>
+                <button onclick="showNext4()" class="next">Next</button>
+            </div>
+        </div>
+
+        <div id="que-part-4">
+            <p>Q4: If you have a bowl with six apples and you take qway four,how many do you have?</p>
+            <div class="que4">
+
+                <label><input type="radio" name="question4" value="2">2</label>
+                <label><input type="radio" id="myques4" name="question4" value="4">4</label>
+                <button onclick="showNext5()" class="next">Next</button>
+            </div>
+        </div>
+
+        <div id="que-part-5">
+            <p>Q5: What dou find in the middle of nowhere?</p>
+            <div class="que5">
+
+                <label><input type="radio" name="question5" value="wh">wh</label>
+                <label><input type="radio" id="myques5" name="question5" value="h">h</label>
+                <button class="next" onclick="next()">Next</button>
+            </div>
+            <button class="result-btn" onclick="result()">See result</button>
+
+        </div>
+
+
+    </div>
+    <div class="bg-pink">
+        <h2>Congratulations!!!</h2>
+        <p id="total-score"></p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
