@@ -14,12 +14,13 @@ a {
     border: 1px solid;
     border-radius: 15px;
     border: none;
-    font-size: 1.5rem;
-    left: 40%;
-    padding: 20px;
+    font-size: 1.7rem;
+    padding: 30px;
     position: absolute;
     text-decoration: none;
     top: 80%;
+    left: 40%;
+   
 }
 
 a:hover {
@@ -112,7 +113,7 @@ h2 {
         position: absolute;
         left: 26%;
         top: 78%;
-        padding: 10px;
+        padding: 30px;
     }
     h2 {
         font-size: 2rem;
@@ -123,6 +124,12 @@ h2 {
     .que1, .que2, .que3, .que4, .que5 {
         margin-left: 10px;
         margin-bottom: 20px;
+    }
+    a {
+        position: absolute;
+        left: 22%;
+        top: 78%;
+        padding: 10px;
     }
 }
 
